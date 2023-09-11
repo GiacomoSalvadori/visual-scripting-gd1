@@ -15,3 +15,4 @@ A dedicate course for game designers about the basics of Unity
 - Game objects and components
 - Visual scripting: does it worth? Unity and visual scripting
 - Let's start: implement an elevator!
+- Monobehaviour is your friend: Start and Update
