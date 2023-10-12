@@ -31,6 +31,18 @@ Create two different prefabs:
 
 ## Lesson 2
 
+- Input system: Unity old vs new system (just an intro)
+- Get key method: up, down and generic
+- Let's create our first moving cube!
+- Input Manager (old): define an input and use it with GetButton and GetAxis(Raw)
+- Boolean operators: AND, OR
+- Spawn Objects
+- Rigidbody and collision
 - Custom event [link](https://learn.unity.com/tutorial/custom-events-in-visual-scripting?uv=2021.3&projectId=605b6eefedbc2a0020a72147)
 - FSM [link] (https://learn.unity.com/tutorial/state-machines-in-visual-scripting?uv=2021.3&projectId=605b6eefedbc2a0020a72147#63a13422edbc2a4cd4098e66)
-- Spawn Objects
+
+### Assignement - 2
+
+Create an elevator based on the following behaviour:
+- The object awaits the player, once the player has arrived it disable the input and starts moving
+- Once the end is reached the elevator stops and the input is enabled again
