@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b339c3d14bcd1434d8c21de3615d0a03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -269,7 +269,6 @@ GameObject:
   - component: {fileID: 208511830}
   - component: {fileID: 208511829}
   - component: {fileID: 208511828}
-  - component: {fileID: 208511831}
   m_Layer: 0
   m_Name: Switcher
   m_TagString: Untagged
@@ -306,10 +305,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Pokedex","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Pokedex,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Pokedex","value":{"$content":[{"Name":"Mew","PkmImg":0},{"Name":"Raikou","PkmImg":1},{"Name":"Gengar","PkmImg":2}],"$type":"System.Collections.Generic.List`1[[PokeContainer,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[PokeContainer,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"PokeName","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"TMPro.TextMeshProUGUI,
+      Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"PokeImg","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.UI.Image,
+      UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"BtnNext","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.UI.Button,
+      UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 8f8eae02cc9ff42448ab8b1cace9ba5e, type: 2}
+    - {fileID: 21300000, guid: f9c985362a110dd429f6e2da7a327c56, type: 3}
+    - {fileID: 21300000, guid: 3e0a1dc20d5d290439fbd16a4b0dc683, type: 3}
+    - {fileID: 21300000, guid: b339c3d14bcd1434d8c21de3615d0a03, type: 3}
+    - {fileID: 1123793416}
+    - {fileID: 147726983}
+    - {fileID: 1253670281}
 --- !u!4 &208511830
 Transform:
   m_ObjectHideFlags: 0
@@ -325,21 +334,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &208511831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208511827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b1f9fa4817b5e4eadba6c23429803b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PokeContainer: {fileID: 11400000, guid: 8f8eae02cc9ff42448ab8b1cace9ba5e, type: 2}
-  PokeName: {fileID: 1123793416}
-  PokeImg: {fileID: 147726983}
 --- !u!1 &497259944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,20 +1026,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1253670282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 208511828}
-        m_TargetAssemblyTypeName: Unity.VisualScripting.EventMachine`2[[Unity.VisualScripting.FlowGraph,
-          Unity.VisualScripting.Flow
-        m_MethodName: TriggerUnityEvent
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GetNextPokemon
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1253670282
 MonoBehaviour:
   m_ObjectHideFlags: 0

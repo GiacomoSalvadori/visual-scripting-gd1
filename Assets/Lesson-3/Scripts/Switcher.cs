@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class Switcher : MonoBehaviour
 {
-    public Pokedex PokeContainer;
+    public Pokedex MyPokedex;
     public TMP_Text PokeName;
     public Image PokeImg;
     private int actualIndex = -1;
 
     public PokeInfo GetNextPoke()
     {
-        actualIndex = (actualIndex + 1) % PokeContainer.Pokemon.Count;
+        actualIndex = (actualIndex + 1) % MyPokedex.Pokemon.Count;
 
-        return PokeContainer.Pokemon[actualIndex];
+        return MyPokedex.Pokemon[actualIndex];
     }
 
     public void SetPokeUI()
